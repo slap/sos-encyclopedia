@@ -6,4 +6,4 @@ theme: minima
 collections:
   polynomials:
     output: true
-    permalink: /polynomials/:name/
+    permalink: /sos-encylcopedia/polynomials/:name/
