@@ -4,7 +4,7 @@ title: Strictly positive polynomials
 name: striclyPositiveBoundary
 degree: 6
 variables: 2
-tags: [motzkin, classical, nonnegative, sos-decomposition]
+tags: [nonnegative, sos-decomposition]
 ---
 
 Strictly positive polynomials in the boundary of Sigma(n=3, 2d=8) cone. 
@@ -20,7 +20,7 @@ p := w1^2 + w2^2 + w3^2 + w4^2 + w5^2;
 p := (2*x0^3*x2-x0^2*x2^2-2*x0*x2^3+x2^4)^2+(-(1/6)*x0^4+(1/6)*x0^3*x2+(1/2)*x0^2*x1^2+2*x0^2*x1*x2+(1/2)*x0^2*x2^2-(5/2)*x0*x1^2*x2-3*x0*x1*x2^2-(1/3)*x0*x2^3+(3/2)*x1^2*x2^2+x1*x2^3)^2+(-x0^2*x1*x2+x1^3*x2)^2+(-x0^2*x1^2+x1^4)^2+(-x0^3*x1+x0*x1^3)^2;
 ````
 
-Strictly positive polynomials in the boundary of Sigma(n=3, 2d=8) cone. 
+Strictly positive polynomials in the boundary of Sigma(n=3, 2d=10) cone. 
 
 Maple code
 ```ruby
