@@ -3,6 +3,10 @@ description: Examples of sums-of-squares decompositions
 baseurl: "/sos-encyclopedia"            # if project site at username.github.io/repo, set to "/repo-name"
 url: "https://slap.github.io"
 theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  parse_block_html: true
 collections:
   polynomials:
     output: true
