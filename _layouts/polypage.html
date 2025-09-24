@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    {% include head.html %}
+    <style>
+      body { font-family: sans-serif; margin: 2rem; }
+      .polynomial { margin-bottom: 2rem; }
+    </style>
+  </head>
+  <body>
+    <h1>{{ page.title }}</h1>
+
+    <div class="polynomial">
+      {{ content }}
+    </div>
+
+    <footer>
+      <p><a href="{{ site.baseurl }}/">Back to home</a></p>
+    </footer>
+  </body>
+</html>
