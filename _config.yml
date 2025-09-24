@@ -1,9 +1,9 @@
 title: SOS Encyclopedia
 description: Examples of sums-of-squares decompositions
 baseurl: "/sos-encyclopedia"            # if project site at username.github.io/repo, set to "/repo-name"
-url: "https://slap.github.io/sos-encyclopedia"
+url: "https://slap.github.io"
 theme: jekyll-theme-minimal
 collections:
   polynomials:
     output: true
-    permalink: /sos-encyclopedia/polynomials/:name/
+    permalink: /polynomials/:name/
