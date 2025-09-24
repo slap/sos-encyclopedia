@@ -6,4 +6,4 @@ theme: jekyll-theme-minimal
 collections:
   polynomials:
     output: true
-    permalink: /sos-encyclopedia/_polynomials/:name/
+    permalink: /sos-encyclopedia/polynomials/:name/
