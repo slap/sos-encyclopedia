@@ -5,7 +5,7 @@ name: soslength
 tags: [motzkin, classical, nonnegative, sos-decomposition]
 ---
 
-The paper Sum of Squares Length of Real Forms gives lower bounds for the Pythagoras number $p(n,2d)$, by constructing explicit examples of
+The paper "Sum of Squares Length of Real Forms" by Claus Scheiderer gives lower bounds for the Pythagoras number $p(n,2d)$, by constructing explicit examples of
 polynomials with the given lenght. This polynomials are constructed as generic sum of squares of polynomials vanishing in a generic set of points.
 
 The construction can be used to build polynomials of any degree and number of variables.
@@ -14,7 +14,7 @@ We construct some polynomials for specific $n$ and $d$ that verify the lower bou
 
 We verified using numerical computations that the generated polynomials have indeed the predicted length.
 
-Case $n = 4, $d=2$. Sum of $5$ polynomials with unique SOS decomposition ($s = 5$).
+Case $n = 4$, $d=2$. Sum of $5$ polynomials with unique SOS decomposition ($s = 5$).
 
 ```
 p[1] := -(9/13)*x[1]^2+(7/13)*x[1]*x[2]-(9/26)*x[1]*x[3]-x[1]*x[4]-(10/13)*x[2]^2+x[4]^2;
@@ -26,7 +26,7 @@ p[5] := -(10/13)*x[1]^2+(2/13)*x[1]*x[2]-(5/13)*x[1]*x[3]+(12/13)*x[2]^2+x[2]*x[
 pp := add(p[i], i = 1..5);
 ```
 
-Case $n = 4, $d=3$. Sum of $8$ polynomials with unique SOS decomposition ($s = 12$).
+Case $n = 4$, $d=3$. Sum of $8$ polynomials with unique SOS decomposition ($s = 12$).
 
 ```
 p[1] := -(375/496)*x[1]^3+(2375/1984)*x[1]^2*x[2]+(461/1984)*x[1]^2*x[3]-(785/992)*x[1]^2*x[4]+(97/64)*x[1]*x[2]^2-(107/1488)*x[1]*x[2]*x[3]+(4475/5952)*x[1]*x[2]*x[4]-(2509/5952)*x[1]*x[3]^2-(5159/5952)*x[1]*x[3]*x[4]+(957/992)*x[1]*x[4]^2-(7/16)*x[2]^3+(9/16)*x[2]^2*x[3]+x[4]^3;
@@ -43,7 +43,7 @@ pp := add(p[i], i = 1..8);
 pp := (121753451/5904384)*x[1]^3*x[2]^2*x[4]-(34239587/35426304)*x[1]^2*x[3]^2*x[4]^2+(16539127/2952192)*x[1]^2*x[2]*x[4]^3-(50184157/17713152)*x[1]^2*x[2]^2*x[3]^2-(63063161/5904384)*x[1]^3*x[3]^2*x[4]+(16171145/1476096)*x[1]^3*x[3]*x[4]^2+(138118499/17713152)*x[1]^2*x[3]^3*x[4]+(427315/15872)*x[1]^2*x[2]^3*x[3]+(201111257/5904384)*x[1]^4*x[2]*x[3]-(63484873/4428288)*x[1]^2*x[2]*x[3]^3+(27426163/1476096)*x[1]^3*x[2]*x[4]^2+(35805139/2952192)*x[1]^4*x[3]*x[4]+(938420317/35426304)*x[1]^2*x[2]^2*x[4]^2+(603065/63488)*x[1]^2*x[2]^3*x[4]+(28535/23808)*x[1]*x[2]^3*x[4]^2-(216207/15872)*x[1]*x[2]^2*x[3]^3+(4039/2976)*x[1]*x[2]^2*x[4]^3-(131/62)*x[1]*x[2]*x[3]^4+(8111/2976)*x[1]*x[2]*x[4]^4+(1213/744)*x[1]*x[3]^4*x[4]-(1721/1488)*x[1]*x[3]^3*x[4]^2+(145/2976)*x[1]*x[3]^2*x[4]^3-(8627/2976)*x[1]*x[3]*x[4]^4+3*x[2]^4*x[3]*x[4]-x[2]^3*x[3]^2*x[4]+(3/2)*x[2]^3*x[3]*x[4]^2+(3/2)*x[2]^2*x[3]^3*x[4]-(1/4)*x[2]^2*x[3]^2*x[4]^2+(9/8)*x[2]^2*x[3]*x[4]^3+(571225/246016)*x[1]^6+(617/256)*x[2]^6+x[3]^6+x[4]^6-(1996665/492032)*x[1]^5*x[2]-(1331187/492032)*x[1]^5*x[3]+(356367/246016)*x[1]^5*x[4]+(70479393/3936256)*x[1]^4*x[2]^2+(4310885/380928)*x[1]^4*x[3]^2-(2258227/984064)*x[1]^4*x[4]^2+(103265/2048)*x[1]^3*x[2]^3-(22367051/1968128)*x[1]^3*x[3]^3+(138651/492032)*x[1]^3*x[4]^3+(2755103/126976)*x[1]^2*x[2]^4-(29373983/35426304)*x[1]^2*x[3]^4+(2590721/984064)*x[1]^2*x[4]^4-(1039/512)*x[1]*x[2]^5+(347/93)*x[1]*x[3]^5+(957/496)*x[1]*x[4]^5-(327/128)*x[2]^5*x[3]-(1/2)*x[2]^5*x[4]+(265/256)*x[2]^4*x[3]^2-(1/4)*x[2]^4*x[4]^2-(7/8)*x[2]^3*x[4]^3-x[2]^2*x[3]^4+x[2]^2*x[4]^4+x[3]^4*x[4]^2+x[3]^2*x[4]^4-(1562567/984064)*x[1]^3*x[2]*x[3]*x[4]-(134997679/17713152)*x[1]^2*x[2]^2*x[3]*x[4]+(71898509/17713152)*x[1]^2*x[2]*x[3]^2*x[4]+(56411651/17713152)*x[1]^2*x[2]*x[3]*x[4]^2+(123313/11904)*x[1]*x[2]^3*x[3]*x[4]-(28871/47616)*x[1]*x[2]^2*x[3]^2*x[4]+(156743/23808)*x[1]*x[2]^2*x[3]*x[4]^2+(3685/744)*x[1]*x[2]*x[3]^3*x[4]+(6949/1488)*x[1]*x[2]*x[3]^2*x[4]^2-(515/744)*x[1]*x[2]*x[3]*x[4]^3+(34379321/2952192)*x[1]^4*x[2]*x[4]+(445111/47616)*x[1]*x[2]^3*x[3]^2+(305007949/5904384)*x[1]^3*x[2]^2*x[3]-(67861/47616)*x[1]*x[2]^4*x[4]-(20007955/2952192)*x[1]^2*x[3]*x[4]^3+(451249/47616)*x[1]*x[2]^4*x[3]-(60135007/5904384)*x[1]^3*x[2]*x[3]^2;
 ```
 
-Case $n = 5, $d=2$. Sum of $7$ polynomials with unique SOS decomposition ($s = 8$).
+Case $n = 5$, $d=2$. Sum of $7$ polynomials with unique SOS decomposition ($s = 8$).
 
 ```
 p[1] := (5/4)*x[1]^2+(1065/92)*x[1]*x[2]-(192/23)*x[1]*x[3]-(1299/92)*x[1]*x[4]-3*x[1]*x[5]-(185/46)*x[2]^2-(347/46)*x[2]*x[4]-(21/46)*x[3]^2+x[5]^2;
