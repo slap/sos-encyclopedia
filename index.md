@@ -7,6 +7,6 @@ title: SOS Encyclopedia
 
 <ul>
 {% for p in site.polynomials %}
-  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a> — degree: {{ p.degree }} — tags: {{ p.tags | join: ", " }}</li>
+  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }} {{ p.title }}</a> — degree: {{ p.degree }} — tags: {{ p.tags | join: ", " }}</li>
 {% endfor %}
 </ul>

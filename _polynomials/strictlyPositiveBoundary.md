@@ -1,7 +1,8 @@
 ---
 layout: polypage
-title: Strictly positive polynomials
+title: Strictly positive polynomials in the boundary of the SOS cone
 name: striclyPositiveBoundary
+author: S. Laplagne & M.Valdettaro
 degree: 6
 variables: 2
 tags: [nonnegative, sos-decomposition]

@@ -1,12 +1,13 @@
 ---
 layout: polypage
 title: Sum of squares length of real forms
+author: C. Scheiderer
 name: soslength
 tags: [motzkin, classical, nonnegative, sos-decomposition]
 ---
 
 The paper "Sum of Squares Length of Real Forms" by Claus Scheiderer gives lower bounds for the Pythagoras number $p(n,2d)$, by constructing explicit examples of
-polynomials with the given lenght. This polynomials are constructed as generic sum of squares of polynomials vanishing in a generic set of points.
+polynomials with the given length. This polynomials are constructed as generic sums of squares of polynomials vanishing in a generic set of points.
 
 The construction can be used to build polynomials of any degree and number of variables.
 
