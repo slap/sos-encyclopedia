@@ -4,6 +4,7 @@ title: Sum of squares length of real forms
 author: C. Scheiderer
 name: soslength
 tags: [motzkin, classical, nonnegative, sos-decomposition, pythagoras]
+year: 2016
 ---
 
 The paper "Sum of Squares Length of Real Forms" by Claus Scheiderer gives lower bounds for the Pythagoras number $p(n,2d)$, by constructing explicit examples of

@@ -4,6 +4,7 @@ title: Sums of Squares of Polynomials with Rational Coefficients
 author: C. Scheiderer
 name: scheiderer2013
 tags: [nonnegative, sos-decomposition, rational]
+year: 2013
 ---
 
 In the paper Sums of Squares of Polynomials with Rational Coefficients, C. Scheiderer gives the first examples of a sum of squares of polynomials over $Q$ that are sums of squares of polynomials over $R$, but not over $Q$.

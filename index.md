@@ -7,25 +7,25 @@ title: SOS Encyclopedia
 
 ### Polynomials over Q that are SOS over R but not over Q
 <ul>
-{%- assign polys_rat = site.polynomials | where_exp: "p", "p.tags contains 'rational'" -%}
+{%- assign polys_rat = site.polynomials | where_exp: "p", "p.tags contains 'rational'"  | sort: "year"-%}
 {% for p in polys_rat %}
-  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — tags: {{ p.tags | join: ", " }}</li>
+  <li>({{p.year}}) <a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — tags: {{ p.tags | join: ", " }}</li>
 {% endfor %}
 </ul>
 
 ### Polynomials in the positive boundary of the SOS cone
 <ul>
-{%- assign polys_pos = site.polynomials | where_exp: "p", "p.tags contains 'positive-boundary'" -%}
+{%- assign polys_pos = site.polynomials | where_exp: "p", "p.tags contains 'positive-boundary'"  | sort: "year" -%}
 {% for p in polys_pos %}
-  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a>  — tags: {{ p.tags | join: ", " }}</li>
+  <li>({{p.year}}) <a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a>  — tags: {{ p.tags | join: ", " }}</li>
 {% endfor %}
 </ul>
 
 ### Polynomials with long length that provide lower bounds for the Pythagoras numbers
 <ul>
-{%- assign polys_pythagoras = site.polynomials | where_exp: "p", "p.tags contains 'pythagoras'" -%}
+{%- assign polys_pythagoras = site.polynomials | where_exp: "p", "p.tags contains 'pythagoras'"  | sort: "year" -%}
 {% for p in polys_pythagoras %}
-  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — tags: {{ p.tags | join: ", " }}</li>
+  <li>({{p.year}}) <a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — tags: {{ p.tags | join: ", " }}</li>
 {% endfor %}
 </ul>
 

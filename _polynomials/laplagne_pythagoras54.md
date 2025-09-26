@@ -6,6 +6,7 @@ author: S. Laplagne
 degree: 4
 variables: 5
 tags: [nonnegative, sos-decomposition, pythagoras]
+year: 2024
 ---
 
 In the paper On the Pythagoras number for polynomials of degree 4 in 5 variables, 
