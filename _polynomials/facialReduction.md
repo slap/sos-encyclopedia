@@ -3,7 +3,7 @@ layout: polypage
 title: Facial Reduction for Exact Polynomial Sum of Squares Decompositions
 author: S. Laplagne
 name: laplagne2018
-tags: [nonnegative, sos-decomposition]
+tags: [nonnegative, sos-decomposition, rational]
 ---
 
 In the paper Facial Reduction for Exact Polynomial Sum of Squares Decompositions, we give a sum of squares of 3 polynomials with coefficients in algebraic extension of $Q$ of odd degree 3, such that the sum of squares has integer coefficientes, but it cannot be decomposed as the sum of squares of polynomials with rational coefficients.
