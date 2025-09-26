@@ -5,7 +5,7 @@ name: striclyPositiveBoundary
 author: S. Laplagne
 degree: 6
 variables: 2
-tags: [nonnegative, sos-decomposition, positive-boundary]
+tags: [nonnegative, sos-decomposition, positive-boundary, rational]
 year: 2023
 ---
 
