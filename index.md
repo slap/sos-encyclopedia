@@ -5,7 +5,7 @@ title: SOS Encyclopedia
 
 ## Examples
 
-### Polynomials over \(\mathbb{Q}\) that are SOS over $\mathbb{R}$ but not over $\mathbb{Q}$
+### Polynomials over Q that are SOS over R but not over Q
 <ul>
 {%- assign polys_rat = site.polynomials | where_exp: "p", "p.tags contains 'rational'" -%}
 {% for p in polys_rat %}
