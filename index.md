@@ -5,7 +5,7 @@ title: SOS Encyclopedia
 
 ## Examples
 
-### Polynomias over Q that are SOS over R but not over Q
+### Polynomials over $\mathbb{Q}$ that are SOS over $\mathbb{R}$ but not over $\mathbb{Q}$
 <ul>
 {%- assign polys_rat = site.polynomials | where_exp: "p", "p.tags contains 'rational'" -%}
 {% for p in polys_rat %}
@@ -13,7 +13,7 @@ title: SOS Encyclopedia
 {% endfor %}
 </ul>
 
-### Polynomias in the positive boundary of the SOS cone
+### Polynomials in the positive boundary of the SOS cone
 <ul>
 {%- assign polys_pos = site.polynomials | where_exp: "p", "p.tags contains 'positive-boundary'" -%}
 {% for p in polys_pos %}
@@ -21,7 +21,7 @@ title: SOS Encyclopedia
 {% endfor %}
 </ul>
 
-### Polynomias with long lenght that provide lower bounds for the Pythagoras numbers
+### Polynomials with long length that provide lower bounds for the Pythagoras numbers
 <ul>
 {%- assign polys_pythagoras = site.polynomials | where_exp: "p", "p.tags contains 'pythagoras'" -%}
 {% for p in polys_pythagoras %}
