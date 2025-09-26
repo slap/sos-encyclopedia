@@ -17,26 +17,27 @@ It is defined as the sum of 3 polynomials $h = f + g + r$, with
 
 ### A polynomial $f$ that is SOS over $R$ but not over $Q$
 
-\begin{aligned}
+$$\begin{align*}
 p_{1} &= (-4\alpha^{2} + 4\alpha - 2)x_{0}^{2} + x_{1}^{2} - 2x_{1}x_{2} + 2x_{2}x_{3} - 2x_{3}^{2}, \\
 p_{2} &= (-4\alpha^{2} - 4\alpha + 6)x_{0}^{2} + x_{1}^{2} + 2x_{1}x_{2} + 2x_{2}x_{3} + 2x_{3}^{2}, \\
 p_{3} &= 4\alpha x_{0}x_{1} + 4\alpha x_{0}x_{2} + 4\alpha^{2} x_{0}x_{3},
-\end{aligned}
+\end{align*}$$
 and 
-\begin{aligned}
+$$\begin{align*}
 f &= p_{1}^{2} + p_{2}^{2} + p_{3}^{2} \\
   &= 40x_{0}^{4} + 8x_{0}^{2}x_{1}^{2} + 32x_{0}^{2}x_{1}x_{2} + 64x_{0}^{2}x_{1}x_{3} + 16x_{0}^{2}x_{2}^{2} + 16x_{0}^{2}x_{2}x_{3} \\
   &\quad + 32x_{0}^{2}x_{3}^{2} + 2x_{1}^{4} + 8x_{1}^{2}x_{2}^{2} + 8x_{1}^{2}x_{2}x_{3} + 16x_{1}^{2}x_{3}^{2} + 8x_{2}^{2}x_{3}^{2} + 8x_{3}^{4}.
-\end{aligned}
+\end{align*}$$
 
 ### A strictly positive polynomial $g$ in the boundary of the SOS cone (following a construction by G. Blekherman)
-\begin{aligned}
+
+$$\begin{align*}
 q_{1} &= y_{0}^{2} - y_{3}^{2}, \\
 q_{2} &= y_{1}^{2} - y_{3}^{2}, \\
 q_{3} &= y_{2}^{2} - y_{3}^{2}, \\
 q_{4} &= -y_{0}^{2} - y_{0}y_{1} - y_{0}y_{2} + y_{0}y_{3} 
          - y_{1}y_{2} + y_{1}y_{3} + y_{2}y_{3},
-\end{aligned}
+\end{align*}$$
 and 
 $$
 g = q_{1}^{2} + q_{2}^{2} + q_{3}^{2} + q_{4}^{2}.
