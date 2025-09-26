@@ -10,7 +10,7 @@ year: 2024
 ---
 
 In the paper On the Pythagoras number for polynomials of degree 4 in 5 variables, 
-we construct a polynomial of degree $4$ in $5% variables that is the sum of 8 squares and cannot be decomposed as the sum of 7 squares.
+we construct a polynomial of degree $4$ in $5$ variables that is the sum of 8 squares and cannot be decomposed as the sum of 7 squares.
 In the paper Lengths of real forms by C. Scheiderer, the lower bound $p(5,4) = 7$ is established and we improve this bound to 8.
 
 ```ruby
