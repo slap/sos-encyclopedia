@@ -12,10 +12,10 @@ This answers an open question by C. Scheiderer.
 
 ### Maple code for the example
 
-```ruby
+´´´
 p[1] := x*(2*RootOf(_Z^3-2)^2*z*x-2*RootOf(_Z^3-2)^2*z^2+2*RootOf(_Z^3-2)*x^2-2*RootOf(_Z^3-2)*x*z-2*w^2+2*w*z+y^2-2*y*z-2*z^2);
 p[2] := 2*RootOf(_Z^3-2)^2*x^3-2*RootOf(_Z^3-2)^2*x^2*z+2*x^3*RootOf(_Z^3-2)-2*x^2*RootOf(_Z^3-2)*z+2*w^2*z-2*w*x*z-2*x^3+2*x^2*z-x*y^2+2*y*z^2+2*z^3;
 p[3] := (2*(RootOf(_Z^3-2)^2*w+RootOf(_Z^3-2)*y+z))*x*(x-z);
 f := add(p[i], i = 1..3);
-```ruby
+´´´
 
