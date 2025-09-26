@@ -18,12 +18,14 @@ $$
 f = p_1^2 + p_2^2 + p_3^2 + p_4^2,
 $$
 with
-\begin{aligned}
+$$
+\begin{align*}
 p_1 &= x\big((2-1/2)x^2 - (y^2 + z^2 + w^2)\big), \\
 p_2 &= y\big((2-1/2)y^2 - (x^2 + z^2 + w^2)\big), \\
 p_3 &= z\big((2-1/2)z^2 - (x^2 + y^2 + w^2)\big), \\
 p_4 &= w\big((2-1/2)w^2 - (x^2 + y^2 + z^2)\big).
-\end{aligned}
+\end{align*}
+$$
 
 In the paper Strictly positive polynomials in the boundary of the SOS cone, by S. Laplagne and M.Valdettaro we prove that the polynomial $f$ has a unique decomposition as a sum of squares.
 
