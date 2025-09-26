@@ -6,6 +6,7 @@ author: S. Laplagne & M.Valdettaro
 degree: 6
 variables: 2
 tags: [nonnegative, sos-decomposition, positive-boundary]
+year: 2020
 ---
 
 Strictly positive polynomials in the boundary of Sigma(n=3, 2d=8) cone. 

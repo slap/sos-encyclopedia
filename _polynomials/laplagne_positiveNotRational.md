@@ -2,10 +2,11 @@
 layout: polypage
 title: Sum of Squares Decomposition of Positive Polynomials with Rational Coefficients
 name: striclyPositiveBoundary
-author: S. Laplagne & M.Valdettaro
+author: S. Laplagne
 degree: 6
 variables: 2
 tags: [nonnegative, sos-decomposition, positive-boundary]
+year: 2023
 ---
 
 In the paper Sum of Squares Decomposition of Positive Polynomials with Rational Coefficients, 
