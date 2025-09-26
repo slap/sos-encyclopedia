@@ -24,7 +24,7 @@ f := 2*x1^4+2*x1^3*x2+2*x1^3*x3-2*x1^3*x4+x1^2*x2^2+4*x1^2*x2*x3-4*x1^2*x2*x4+x1
 ```
 
 Case $n = 3$, $2d=6$. Sum of $3$ polynomials with unique SOS decomposition.
-The following example is given in Choi paper
+The following example is given in Reznick (1978) paper
 
 ```
 p[1] := x * (3/2 * x^2 - (y^2+z^2));
