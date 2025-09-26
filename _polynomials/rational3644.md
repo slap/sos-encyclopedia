@@ -13,7 +13,7 @@ sums of squares over R but not over Q. The coefficientes of the summands are in 
 The examples are simpler than the original example in the paper Facial Reduction for Exact Polynomial Sum of Squares Decompositions, by S. Laplagne.
 We provide one example with $(n,2d) = (3,6)$ and another example with $(n,2d) = (4,4)$. In both cases the polynomials are sums of 3 squares.
 
-## Maple code for the example $(n,2d) = (3,6)$
+### Maple code for the example $(n,2d) = (3,6)$
 
 ```
 # Define t as the real root of X^3 - 2
@@ -29,7 +29,7 @@ f := simplify(add(p[i]^2, i = 1 .. 3));
 f := x0^6-3*x0^4*x1^2-4*x0^4*x1*x2+2*x0^4*x2^2-8*x0^3*x1^2*x2-8*x0^3*x1*x2^2+28*x0^3*x2^3+4*x0^2*x1^3*x2+10*x0^2*x1^2*x2^2+24*x0^2*x1*x2^3+41*x0^2*x2^4+16*x0*x1^4*x2+32*x0*x1^3*x2^2-48*x0*x1^2*x2^3-120*x0*x1*x2^4-60*x0*x2^5+4*x1^6+8*x1^5*x2-12*x1^3*x2^3-15*x1^2*x2^4+36*x1*x2^5+72*x2^6;
 ```
 
-## Maple code for the example $(n,2d) = (4,4)$
+### Maple code for the example $(n,2d) = (4,4)$
 
 ```
 # Define t as the real root of X^3 - 2
