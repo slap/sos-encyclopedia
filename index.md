@@ -29,6 +29,14 @@ title: SOS Encyclopedia
 {% endfor %}
 </ul>
 
+### Random polynomials
+<ul>
+{%- assign polys_random = site.polynomials | where_exp: "p", "p.tags contains 'random'"  | sort: "year" -%}
+{% for p in polys_pythagoras %}
+  <li>({{p.year}}) <a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — tags: {{ p.tags | join: ", " }}</li>
+{% endfor %}
+</ul>
+
 ## All examples
 
 <ul>
