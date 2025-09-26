@@ -21,7 +21,7 @@ title: SOS Encyclopedia
 {% endfor %}
 </ul>
 
-### Polynomials with long length that provide lower bounds for the Pythagoras numbers
+### Lower bounds for the Pythagoras numbers
 <ul>
 {%- assign polys_pythagoras = site.polynomials | where_exp: "p", "p.tags contains 'pythagoras'"  | sort: "year" -%}
 {% for p in polys_pythagoras %}
