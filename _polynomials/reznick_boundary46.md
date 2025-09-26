@@ -14,10 +14,13 @@ $\partial \Sigma_{4,6}$ appeared in the paper Extremal PSD forms with few terms 
 for strictly positive polynomials of degree $6$ and any number of variables 
 that are in the boundary of the corresponding SOS cone. For $4$ variables, 
 one of such examples is 
+
 $$
 f = p_1^2 + p_2^2 + p_3^2 + p_4^2,
 $$
+
 with
+
 $$
 \begin{align*}
 p_1 &= x\big((2-1/2)x^2 - (y^2 + z^2 + w^2)\big), \\
