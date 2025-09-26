@@ -1,9 +1,9 @@
 ---
 layout: polypage
-title: Facial Reduction for Exact Polynomial Sum of Squares Decompositions
+title: Exact polynomial sum of squares decompositions
 author: S. Laplagne
-name: laplagne2018
-tags: [nonnegative, sos-decomposition]
+name: laplagne2023
+tags: [nonnegative, sos-decomposition, rational]
 ---
 
 In the paper Exact polynomial sum of squares decompositions, by J. Capco, S. Laplagne and C. Scheiderer (unpublished) we give two examples of polynomials over Q that are
