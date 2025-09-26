@@ -36,3 +36,9 @@ title: SOS Encyclopedia
   <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — tags: {{ p.tags | join: ", " }}</li>
 {% endfor %}
 </ul>
+
+
+
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
