@@ -13,11 +13,18 @@ title: SOS Encyclopedia
 {% endfor %}
 </ul>
 
+### Polynomias in the positive boundary of the SOS cone
+<ul>
+{%- assign polys_pos = site.polynomials | where_exp: "p", "p.tags contains 'positive-boundary'" -%}
+{% for p in polys_pos %}
+  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — degree: {{ p.degree }} — tags: {{ p.tags | join: ", " }}</li>
+{% endfor %}
+</ul>
 
 ## All examples
 
 <ul>
-{% for p in polys %}
+{% for p in site.polynomials  %}
   <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — degree: {{ p.degree }} — tags: {{ p.tags | join: ", " }}</li>
 {% endfor %}
 </ul>

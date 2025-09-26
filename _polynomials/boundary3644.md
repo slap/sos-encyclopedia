@@ -3,7 +3,7 @@ layout: polypage
 title: Nonnegative polynomials and sums of squares
 author: G. Blekherman
 name: blekherman2012
-tags: [nonnegative, sos-decomposition]
+tags: [nonnegative, sos-decomposition, positive-boundary]
 ---
 
 The paper Nonnegative polynomials and sums of squares characterizes polynomials in the positive boundary of the SOS cone for the cases $(n,2d) = (3,6)$ and $(n,2d) = (4,4)$, and proposes a strategy to construct such polynomials.
