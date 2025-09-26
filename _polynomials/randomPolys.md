@@ -14,9 +14,10 @@ It can be used to find typical lengths of sums of squares
 #### Maple code
 
 ```ruby
+
 nPolys := 13;
-d := 2; # Degree
-n := 6; # Number of variables
+d := 3; # Degree
+n := 4; # Number of variables
 
 # Variables
 polVars := [seq(x[i], i = 1..n)]; 
@@ -36,11 +37,31 @@ roll := rand(-6 .. 6);
 # Random polynomials
 p := [seq(add(roll()*monoms[i], i = 1 .. nMonoms), j = 1..nPolys)];
 
-f := add(p[j], j=1..nPolys);
+f := expand(add(p[j]^2, j=1..nPolys));
+```
+
+The following code can be used to find numerically the length of the polynomials.
+It minimizes a random linear functional over the spectrahedron, which gives a solution of low rank.
+
+```
+# Path for rationalSOS library
+currentdir("C:/Users/slapl/Dropbox/repos/rationalSOS");
+
+#######################################################################
+# Load "Rational SOS" procedures
+#######################################################################
+read("rationalSOS.mpl"):
+with(rationalSOS):
+with(LinearAlgebra):
+
+# Display tables of any size
+interface(rtablesize=infinity);
 
 # We can find the length by minimizing random linear functionals 
 out := exactSOS(f, facial = "no", objFunction = "random"):
-eig(out[3]);
+ev := eig(out[3]):
+n := Dimension(ev):
+M := < Vector(n, i -> n - i + 1) | ev >;
 ```
 
 <!-- add history, minimal number of squares, references, verification scripts, etc. -->
