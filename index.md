@@ -21,6 +21,14 @@ title: SOS Encyclopedia
 {% endfor %}
 </ul>
 
+### Polynomias with long lenght that provide lower bounds for the Pythagoras numbers
+<ul>
+{%- assign polys_pythagoras = site.polynomials | where_exp: "p", "p.tags contains 'pythagoras'" -%}
+{% for p in polys_pythagoras %}
+  <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.author }}. {{ p.title }}</a> — degree: {{ p.degree }} — tags: {{ p.tags | join: ", " }}</li>
+{% endfor %}
+</ul>
+
 ## All examples
 
 <ul>
