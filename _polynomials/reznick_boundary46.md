@@ -44,7 +44,8 @@ f := 6*x^2*y^2*z^2+6*y^2*w^2*z^2+6*x^2*w^2*z^2+6*x^2*w^2*y^2-2*x^4*w^2-2*x^4*y^2
 
 # We verify uniqueness
 out := exactSOS(f, facial = "no", objFunction = "random"):
-eig(out[3]); # Only four non-zero eigenvalues
+ev := eig(out[3]): n := Dimension(ev):
+M := < Vector(n, i -> n - i + 1) | ev >;   # Only four non-zero eigenvalues
 ```
 
 
