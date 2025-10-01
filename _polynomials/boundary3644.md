@@ -59,6 +59,7 @@ interface(rtablesize=infinity);
 # If we get always the same answer, the decomposition is unique.
 out := exactSOS(f, facial = "no", objFunction = "random"):
 ev := eig(out[3]): n := Dimension(ev):
-M := < Vector(n, i -> n - i + 1) | ev >;```
+M := < Vector(n, i -> n - i + 1) | ev >;
+```
 
 <!-- add history, minimal number of squares, references, verification scripts, etc. -->
