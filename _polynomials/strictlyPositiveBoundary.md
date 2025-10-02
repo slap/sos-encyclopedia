@@ -209,14 +209,16 @@ pp := w1^2 + w2^2 + w3^2 + w4^2 + w5^2;
 # And verify using SEDUMI that this polynomial is in the border of 
 # the SOS cone.
 out := exactSOS(pp, facial = "no", objFunction = "eig"):
-eig(out[3]);
+ev := eig(out[3]): n := Dimension(ev):
+M := < Vector(n, i -> n - i + 1) | ev >;
 
 # We obtain a sum of 5 squares in the border (the matrix has rank 5).
 
 # Moreover, the decomposition seems to be unique,
 # minimizing another function we obtain the same matrix.
 out := exactSOS(pp, facial = "no", objFunction = "random"):
-eig(out[3]);
+ev := eig(out[3]): n := Dimension(ev):
+M := < Vector(n, i -> n - i + 1) | ev >;
 ```
 
 <!-- add history, minimal number of squares, references, verification scripts, etc. -->

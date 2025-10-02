@@ -41,12 +41,25 @@ When we maximize the smallest eigenvalue, we will get a solution wil largest pos
 If we get in both cases the same decomposition, it means that the decomposition is unique.
 
 ```
-# We verify uniqueness numerically
-out := exactSOS(f, facial = "no", objFunction = "random"):
-eig(out[3]);
+####################################################################
+## Use the following code to verify numerically unique decomposition
+####################################################################
 
-out := exactSOS(f, facial = "no", objFunction = "eig"):
-eig(out[3]);
+# Path for rationalSOS library
+currentdir("C:/Users/slapl/Dropbox/repos/rationalSOS");
+
+# Load "Rational SOS" procedures
+read("rationalSOS.mpl"):
+with(rationalSOS):
+
+# Display tables of any size
+interface(rtablesize=infinity);
+
+# We verify uniqueness.
+# If we get always the same answer, the decomposition is unique.
+out := exactSOS(f, facial = "no", objFunction = "random"):
+ev := eig(out[3]): n := Dimension(ev):
+M := < Vector(n, i -> n - i + 1) | ev >;
 ```
 
 <!-- add history, minimal number of squares, references, verification scripts, etc. -->
