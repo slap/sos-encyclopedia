@@ -11,7 +11,11 @@ The paper Nonnegative polynomials and sums of squares characterizes polynomials 
 
 We give an example for each case.
 
-Case $n = 4$, $2d=4$. Sum of $4$ polynomials with unique SOS decomposition.
+### Case $n = 4$, $2d=4$. 
+
+Sum of $4$ polynomials with unique SOS decomposition.
+
+The following example is constructed using G. Blekherman strategy.
 
 ```
 p[1] := x1^2- x4^2;
@@ -23,7 +27,10 @@ f := add(p[i]^2, i = 1..4);
 f := 2*x1^4+2*x1^3*x2+2*x1^3*x3-2*x1^3*x4+x1^2*x2^2+4*x1^2*x2*x3-4*x1^2*x2*x4+x1^2*x3^2-4*x1^2*x3*x4-x1^2*x4^2+2*x1*x2^2*x3-2*x1*x2^2*x4+2*x1*x2*x3^2-6*x1*x2*x3*x4+2*x1*x2*x4^2-2*x1*x3^2*x4+2*x1*x3*x4^2+x2^4+x2^2*x3^2-2*x2^2*x3*x4-x2^2*x4^2-2*x2*x3^2*x4+2*x2*x3*x4^2+x3^4-x3^2*x4^2+3*x4^4;
 ```
 
-Case $n = 3$, $2d=6$. Sum of $3$ polynomials with unique SOS decomposition.
+### Case $n = 3$, $2d=6$. 
+
+Sum of $3$ polynomials with unique SOS decomposition.
+
 The following example is given in Reznick (1978) paper
 
 ```
@@ -33,6 +40,19 @@ p[3] := z * (3/2 * z^2 - (x^2+y^2));
 f := add(p[i]^2, i = 1..3);
 f := (9/4)*x^6-2*x^4*y^2-2*x^4*z^2-2*x^2*y^4+6*x^2*y^2*z^2-2*x^2*z^4+(9/4)*y^6-2*y^4*z^2-2*y^2*z^4+(9/4)*z^6;
 ```
+
+The following example is given by C. Scheiderer & J. Capco (2021)  using G. Blekherman strategy.
+```
+p[1] := x * (x^2 - z^2);
+p[2] := y * (y^2 - z^2);
+p[3] := (3*x^2 + 3*y^2 - 4*z^2) * z;
+f := expand(add(p[i]^2, i = 1..3));
+f := x^6+7*x^4*z^2+18*x^2*y^2*z^2-23*x^2*z^4+y^6+7*y^4*z^2-23*y^2*z^4+16*z^6;
+```
+
+
+
+### Maple code 
 
 The following code can be used to verify the examples.
 When we maximize a linear functional we will get a solution in the border, with low number of polynomials in the decomposition. 
