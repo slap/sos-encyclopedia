@@ -22,11 +22,11 @@ p[5] := x[1]*x[5];
 p[6] := x[2]*x[5];
 p[7] := x[3]*x[5];
 p[8] := x[4]*x[5];
-f := add(p[i], i = 1..8);
-f := -x[1]*x[2]-x[1]*x[3]+x[1]*x[4]+x[1]*x[5]+x[2]^2-x[2]*x[3]+x[2]*x[4]+x[2]*x[5]+x[3]^2+x[3]*x[4]+x[3]*x[5]-3*x[4]^2+x[4]*x[5];
+f := add(p[i]^2, i = 1..8);
+# f := (x[1]^2-x[4]^2)^2+(x[2]^2-x[4]^2)^2+(x[3]^2-x[4]^2)^2+(-x[1]^2-x[1]*x[2]-x[1]*x[3]+x[1]*x[4]-x[2]*x[3]+x[2]*x[4]+x[3]*x[4])^2+x[1]^2*x[5]^2+x[2]^2*x[5]^2+x[3]^2*x[5]^2+x[4]^2*x[5]^2;
 
 # We verify numerically that the SOS decomposition is unique
-out := exactSOS(pp, facial = "no", objFunction = "random"):
+out := exactSOS(f, facial = "no", objFunction = "random"):
 ev := eig(out[3]): n := Dimension(ev):
 M := < Vector(n, i -> n - i + 1) | ev >;
 ```
